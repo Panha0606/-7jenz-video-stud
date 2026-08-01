@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7JENZ Video Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>7JENZ</h1>
+  <p>Professional Video Compression Studio</p>
+</header>
+
+<main class="container">
+
+  <div class="upload-box">
+    <h2>Upload Video</h2>
+    <input id="videoInput" type="file" accept="video/*">
+
+<br><br>
+
+<video id="preview" controls style="display:none;width:100%;border-radius:15px;"></video>
+  </div>
+
+  <div class="buttons">
+    <button>Compress</button>
+    <button>Download</button>
+  </div>
+
+</main>
+
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.js"></script>
+<script src="ffmpeg.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
