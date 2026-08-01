@@ -1,78 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7Jenz</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>7JENZ Video Studio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.js"></script>
-
-<script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/index.js"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="header">
-
-<h1>7JENZ</h1>
-
-<p>Professional Video Compression Studio</p>
-
-</header>
 
 <div class="container">
 
-<div class="upload-box">
+    <h1>7Jenz</h1>
 
-<input
-id="videoInput"
-type="file"
-accept="video/*">
+    <p>
+        Professional Video Upload Platform
+    </p>
 
-<br><br>
-
-<video
-id="preview"
-controls
-style="display:none;width:100%;border-radius:15px;">
-</video>
+    <button id="telegram">
+        Login with Telegram
+    </button>
 
 </div>
 
-<div id="status"></div>
-
-<div class="buttons">
-
-<button id="compressBtn">
-
-Compress
-
-</button>
-
-<button
-id="downloadBtn"
-disabled>
-
-Download
-
-</button>
-
-</div>
-
-</div>
-
-<script src="ffmpeg.js"></script>
-
-<script src="app.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
