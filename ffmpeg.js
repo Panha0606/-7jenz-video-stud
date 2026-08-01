@@ -16,3 +16,8 @@ async function loadFFmpeg() {
 
     ffmpegLoaded = true;
 }
+ffmpeg.on("progress", ({ progress }) => {
+    const percent = Math.round(progress * 100);
+    document.getElementById("status").innerHTML =
+        "📦 Compressing... " + percent + "%";
+});
