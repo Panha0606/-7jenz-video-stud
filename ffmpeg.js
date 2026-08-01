@@ -5,19 +5,13 @@ const ffmpeg = new FFmpeg();
 let ffmpegLoaded = false;
 
 async function loadFFmpeg() {
+
     if (ffmpegLoaded) return;
 
-    try {
-        alert("Loading FFmpeg...\nPlease wait a moment.");
+    await ffmpeg.load({
+        coreURL:
+        "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js"
+    });
 
-        await ffmpeg.load();
-
-        ffmpegLoaded = true;
-
-        alert("✅ FFmpeg Loaded Successfully");
-
-    } catch (err) {
-        console.error(err);
-        alert("❌ Failed to load FFmpeg");
-    }
+    ffmpegLoaded = true;
 }
