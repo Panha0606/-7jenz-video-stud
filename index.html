@@ -1,29 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7Jenz</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>7JENZ Video Studio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div class="container">
+<header>
 
-    <h1>7Jenz</h1>
+<div class="logo">
 
-    <p>
-        Professional Video Upload Platform
-    </p>
+<h1>7JENZ</h1>
 
-    <button id="telegram">
-        Login with Telegram
-    </button>
+<p>Professional Video Studio</p>
 
 </div>
 
-<script src="script.js"></script>
+</header>
+
+<main>
+
+<section class="card">
+
+<h2>Upload Your Video</h2>
+
+<input
+type="file"
+id="videoInput"
+accept="video/*">
+
+<video
+id="preview"
+controls
+style="display:none;">
+</video>
+
+<div id="videoInfo">
+
+<p id="fileName">No file selected</p>
+
+<p id="fileSize"></p>
+
+</div>
+
+<div class="progress">
+
+<div
+id="progressBar">
+</div>
+
+</div>
+
+<p id="status">
+Waiting...
+</p>
+
+<div class="buttons">
+
+<button id="compressBtn">
+
+Compress
+
+</button>
+
+<button id="downloadBtn" disabled>
+
+Download
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="app.js"></script>
 
 </body>
+
 </html>
