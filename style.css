@@ -1,82 +1,111 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-
-    background:#090909;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    height:100vh;
-
+background:#071321;
+color:white;
 }
 
-.container{
-
-    width:350px;
-
-    background:#151515;
-
-    border-radius:20px;
-
-    padding:40px;
-
-    text-align:center;
-
-    box-shadow:0 0 30px #00e5ff55;
-
+header{
+background:#0b1d33;
+padding:25px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 
-h1{
-
-    color:#00E5FF;
-
-    margin-bottom:15px;
-
-    font-size:40px;
-
+.logo h1{
+font-size:38px;
+color:#00d4ff;
 }
 
-p{
+.logo p{
+margin-top:5px;
+color:#9cc9dd;
+}
 
-    color:white;
+main{
+display:flex;
+justify-content:center;
+padding:40px 20px;
+}
 
-    margin-bottom:30px;
+.card{
+width:100%;
+max-width:700px;
+background:#10263d;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
 
+.card h2{
+margin-bottom:20px;
+}
+
+input[type=file]{
+width:100%;
+padding:15px;
+background:#183754;
+border-radius:12px;
+color:white;
+border:none;
+}
+
+video{
+width:100%;
+margin-top:25px;
+border-radius:15px;
+}
+
+#videoInfo{
+margin-top:20px;
+line-height:28px;
+}
+
+.progress{
+margin-top:20px;
+height:10px;
+background:#203d58;
+border-radius:100px;
+overflow:hidden;
+}
+
+#progressBar{
+width:0%;
+height:100%;
+background:#00d4ff;
+transition:.3s;
+}
+
+#status{
+margin-top:15px;
+font-size:15px;
+color:#b8d5e6;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+margin-top:25px;
 }
 
 button{
-
-    width:100%;
-
-    height:50px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#00E5FF;
-
-    color:black;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
+flex:1;
+padding:15px;
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+background:#00d4ff;
+color:#071321;
 }
 
-button:hover{
-
-    opacity:.85;
-
+button:disabled{
+opacity:.5;
+cursor:not-allowed;
 }
